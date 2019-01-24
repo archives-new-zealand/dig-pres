@@ -1,7 +1,7 @@
 #!/bin/bash
 
 probe () {
-	# call ffprobe and log warmings to a text file
+	# call ffprobe and log warnings to a text file
 	( FFREPORT=file=error.log:level=24 ffprobe -loglevel warning -show_streams -show_format -of flat -i "$file" > probe.txt)
 
 }
