@@ -3,8 +3,10 @@ MAINDIR='Finished'
 OLDPREFIX='PM_'
 NEWPREFIX=''
 SUBFOLDER='Master'
-# for splitting multipage tifs in single tifs in folders appropriate for ingest through ANZ's ingestor tool and Jan's filenaming requirments. Places all split tifs 
-#into a sub directories for each multipage tif under a new main directory
+# for splitting multipage tifs in single tifs in folders appropriate for 
+# ingest through ANZ's ingestor tool and Jan's filenaming requirements. 
+# Places all split tifs into a sub directories for each 
+# multipage tif under a new main directory
 
 mkdir "$MAINDIR"
 for TIF in *.tif; do
