@@ -11,7 +11,7 @@ import mmap
 def main():
 	print "Please enter the full name of the first checksum file including the .txt extension"
 	fileinput1 = raw_input("> ")
-	print "Now enter the full name of the checksum file you want to check against, including the .txt extentsion"
+	print "Now enter the full name of the checksum file you want to check against, including the .txt extension"
 	fileinput2 = raw_input("> ")
 	print "What is the length in digits of the protocol are you using? If you're not sure, enter more info."
 	checksum = raw_input("> ")
@@ -40,7 +40,7 @@ def main():
 
 
 def checksumcheck(f1,f2,mm,checklen,file3):
-	#fuction that pulls out the checksums from one file and searches them against the other file
+	#function that pulls out the checksums from one file and searches them against the other file
 	
 	for line in iter(f1):
 		
@@ -49,7 +49,7 @@ def checksumcheck(f1,f2,mm,checklen,file3):
 		#print y
 		if mm.find(y, 0) == -1:
 		
-		 	file3.write("Checksum not found not found in {} {}".format(f2,line)) 
+		 	file3.write("Checksum not found, not found in {} {}".format(f2,line)) 
 			
 		else:
 			pass
